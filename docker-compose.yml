@@ -16,7 +16,7 @@ services:
       - flask-app
 
   jenkins:
-    image: jenkins/jenkins:lts
+    build: ./jenkins
     container_name: jenkins
     ports:
       - "8080:8080"
